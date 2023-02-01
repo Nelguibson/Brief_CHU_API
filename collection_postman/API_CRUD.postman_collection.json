@@ -1,0 +1,304 @@
+{
+	"info": {
+		"_postman_id": "80fd797f-3fa3-4efb-9df9-61a97932b89c",
+		"name": "API_CRUD",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25491484"
+	},
+	"item": [
+		{
+			"name": "CRUD_MATERIEL",
+			"item": [
+				{
+					"name": "Tout le materiel",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://172.23.43.101:5000/materiel",
+							"protocol": "http",
+							"host": [
+								"172",
+								"23",
+								"43",
+								"101"
+							],
+							"port": "5000",
+							"path": [
+								"materiel"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ID dans URL pour 1 materiel",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://172.23.43.101:5000/materiel/1",
+							"protocol": "http",
+							"host": [
+								"172",
+								"23",
+								"43",
+								"101"
+							],
+							"port": "5000",
+							"path": [
+								"materiel",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Ajouter un materiel",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nom\":\"telephone\", \"taille\":\"10\", \"etat\":\"moyen\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://172.23.43.101:5000/materiel",
+							"protocol": "http",
+							"host": [
+								"172",
+								"23",
+								"43",
+								"101"
+							],
+							"port": "5000",
+							"path": [
+								"materiel"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Modifier un materiel avec ID",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nom\":\"phon\", \"taille\":\"10\", \"etat\":\"moyen\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://172.23.43.101:5000/materiel/7",
+							"protocol": "http",
+							"host": [
+								"172",
+								"23",
+								"43",
+								"101"
+							],
+							"port": "5000",
+							"path": [
+								"materiel",
+								"7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Supprimer un materiel",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://172.23.43.101:5000/materiel/8",
+							"protocol": "http",
+							"host": [
+								"172",
+								"23",
+								"43",
+								"101"
+							],
+							"port": "5000",
+							"path": [
+								"materiel",
+								"8"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "CRUD_EMPLOYE",
+			"item": [
+				{
+					"name": "Tout les employés",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://172.23.43.101:5000/employe",
+							"protocol": "http",
+							"host": [
+								"172",
+								"23",
+								"43",
+								"101"
+							],
+							"port": "5000",
+							"path": [
+								"employe"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ID dans URL pour 1 employé",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://172.23.43.101:5000/employe/1",
+							"protocol": "http",
+							"host": [
+								"172",
+								"23",
+								"43",
+								"101"
+							],
+							"port": "5000",
+							"path": [
+								"employe",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Ajouter un employé",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nom\":\"MACHIN\", \"prenom\":\"Chose\", \"age\":\"34\", \"departement\":\"dev ia\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://172.23.43.101:5000/employe",
+							"protocol": "http",
+							"host": [
+								"172",
+								"23",
+								"43",
+								"101"
+							],
+							"port": "5000",
+							"path": [
+								"employe"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Modifier un employe avec ID",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nom\":\"Martin\", \"prenom\": \"Le Cunff\", \"age\": \"24\", \"departement\": \"développeur front-end\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://172.23.43.101:5000/employe/2",
+							"protocol": "http",
+							"host": [
+								"172",
+								"23",
+								"43",
+								"101"
+							],
+							"port": "5000",
+							"path": [
+								"employe",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Supprimer un employé",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://172.23.43.101:5000/employe/3",
+							"protocol": "http",
+							"host": [
+								"172",
+								"23",
+								"43",
+								"101"
+							],
+							"port": "5000",
+							"path": [
+								"employe",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Ensemble des données/html",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://172.23.43.101:5000/",
+					"protocol": "http",
+					"host": [
+						"172",
+						"23",
+						"43",
+						"101"
+					],
+					"port": "5000",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
